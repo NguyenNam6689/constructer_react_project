@@ -22,7 +22,7 @@ const RoutesPage = () => {
       element: <Navbar />,
       children: [
         {
-          path: 'home',
+          index: true,
           element: <HomePage />,
         },
         {

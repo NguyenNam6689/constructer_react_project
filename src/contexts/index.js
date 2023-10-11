@@ -1,21 +1,25 @@
 import React, { createContext, useState } from 'react';
 
 export const namContext = createContext();
-const NamProvider = ({ childrent }) => {
-  const [count, setCount] = useState();
+const NamProvider = ({ children }) => {
+  const [count, setCount] = useState(0);
+  const handleChangeDecrement = () => {
+    return setCount(count - 1);
+  };
+  const handleChangeIncrement = () => {
+    return setCount(count + 1);
+  };
+  if (count < 0) {
+    setCount(0);
+  }
   const data = {
     count,
     setCount,
-    handleChangeDecerment,
+    handleChangeDecrement,
     handleChangeIncrement,
   };
-  const handleChangeDecerment = () => {
-    setCount((count) => count - 1);
-  };
-  const handleChangeIncrement = () => {
-    setCount((count) => count + 1);
-  };
-  return <namContext.Provider value={data}>{childrent}</namContext.Provider>;
+
+  return <namContext.Provider value={data}>{children}</namContext.Provider>;
 };
 
 export default NamProvider;
