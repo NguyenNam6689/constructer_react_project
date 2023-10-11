@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import About from 'src/pages/about';
+import RoutesPage from 'src/routers';
 
 function App() {
   return (
     <>
-      <About />
+      <RoutesPage />
     </>
   );
 }
