@@ -9,9 +9,6 @@ const NamProvider = ({ children }) => {
   const handleChangeIncrement = () => {
     return setCount(count + 1);
   };
-  if (count > 10) {
-    setCount(10);
-  }
   if (count < 0) {
     setCount(0);
   }
