@@ -1,27 +1,27 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import NavLinkActive from 'src/routers/NavLinkActive';
 
 const Navbar = () => {
   return (
     <>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <NavLinkActive to="/">Home</NavLinkActive>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <NavLinkActive to="/about">About</NavLinkActive>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <NavLinkActive to="/contact">Contact</NavLinkActive>
         </li>
         <li>
-          <Link to="/login">Login</Link>
+          <NavLinkActive to="/login">Login</NavLinkActive>
         </li>
         <li>
-          <Link to="/register">Register</Link>
+          <NavLinkActive to="/register">Register</NavLinkActive>
         </li>
       </ul>
-      <Outlet />
     </>
   );
 };

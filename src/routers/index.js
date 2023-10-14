@@ -1,6 +1,6 @@
 //* LIB
 import React from 'react';
-import { Outlet, useRoutes } from 'react-router-dom';
+import { useRoutes } from 'react-router-dom';
 
 //* LAYOUTS
 import Navbar from 'src/layouts/navbar';
@@ -15,11 +15,17 @@ import {
   RegisterPage,
 } from 'src/imports/pages';
 
+import OutLetChild from './OutLetChild';
+
 const RoutesPage = () => {
   let elements = useRoutes([
     {
       path: '/',
-      element: <Navbar />,
+      element: (
+        <OutLetChild>
+          <Navbar />
+        </OutLetChild>
+      ),
       children: [
         {
           index: true,

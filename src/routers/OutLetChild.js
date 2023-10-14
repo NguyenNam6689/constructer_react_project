@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-const OutletChild = ({ children }) => {
+const OutLetChild = ({ children }) => {
   return (
     <>
       {children}
@@ -10,4 +10,4 @@ const OutletChild = ({ children }) => {
   );
 };
 
-export default OutletChild;
+export default OutLetChild;
