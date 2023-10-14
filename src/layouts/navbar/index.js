@@ -31,6 +31,11 @@ const Navbar = () => {
             Register
           </NavLinkActive>
         </li>
+        <li className="navbar-wrapper__menu__item">
+          <NavLinkActive className="navbar-wrapper__menu__item__link" to="/todo">
+            ToDoList
+          </NavLinkActive>
+        </li>
       </ul>
     </div>
   );

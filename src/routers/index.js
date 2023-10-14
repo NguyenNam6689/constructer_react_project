@@ -13,6 +13,7 @@ import {
   LoginPage,
   NotFoundPage,
   RegisterPage,
+  ToDoListPage,
 } from 'src/imports/pages';
 
 import OutLetChild from './OutLetChild';
@@ -46,6 +47,10 @@ const RoutesPage = () => {
         {
           path: 'register',
           element: <RegisterPage />,
+        },
+        {
+          path: 'todo',
+          element: <ToDoListPage />,
         },
       ],
     },

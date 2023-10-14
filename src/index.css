@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap");
 
 :root {
-    --dark-primary-color: #0288d1;
-    --light-primary-color: #b3e5fc;
-    --primary-color: #03a9f4;
+    --dark-primary-color: #1fae84;
+    --light-primary-color: #e0f7fa;
+    --primary-color: #00838f;
     --text-icon-color: #ffffff;
     --accent-collor: #9e9e9e;
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
-    --divider-color: #bdbdbd;
+    --divider-color: #b2ebf2;
 }
 
 * {
