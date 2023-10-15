@@ -1,0 +1,125 @@
+.todo-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--primary-color);
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo-wrapper .input-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem;
+    border-bottom: 2px solid var(--text-icon-color);
+}
+
+.input-wrapper .label-title {
+    margin-top: 14px;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--text-icon-color);
+}
+
+.input-wrapper .title,
+.input-wrapper .description {
+    width: 500px;
+    padding: 10px;
+    border: 1.5px solid var(--light-primary-color);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.input-wrapper .title[type="text"],
+.input-wrapper .description[type="text"] {
+    box-sizing: border-box;
+}
+
+.input-wrapper .btn-add {
+    cursor: pointer;
+    padding: 10px 40px;
+    font-size: 2rem;
+    background: transparent;
+    color: var(--text-icon-color);
+    border: 1.5px solid var(--light-primary-color);
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.input-wrapper .btn-add:hover {
+    background: var(--text-icon-color);
+    color: var(--primary-color);
+}
+
+.todo-wrapper .listTodo {
+    width: 100%;
+}
+
+.listTodo .item {
+    display: flex;
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.item .content {
+    width: 70%;
+    text-align: left;
+    margin-left: 20px;
+    position: relative;
+}
+
+.content .task {
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--text-icon-color);
+    margin-bottom: 10px;
+}
+
+.content .description {
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: var(--secondary-text-color);
+}
+
+.item .button {
+    width: 30%;
+    text-align: center;
+}
+
+.button .btn-edit,
+.button .btn-remove {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: transparent;
+    color: var(--text-icon-color);
+    border: 1px solid var(--light-primary-color);
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.button .btn-edit {
+    margin-right: 10px;
+}
+
+.button .btn-edit:hover {
+    background: #ffefd5;
+    color: var(--primary-text-color);
+}
+
+.button .btn-remove:hover {
+    background: #f27171;
+    color: var(--primary-text-color);
+}
