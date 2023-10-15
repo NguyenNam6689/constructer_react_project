@@ -1,13 +1,5 @@
-export const SetLocalStorage = (key) => {
-  const Vehicle = [
-    {
-      name: 'Honda',
-    },
-    {
-      name: 'Toyota',
-    },
-  ];
-  localStorage.setItem(key, JSON.stringify(Vehicle));
+export const SetLocalStorage = (key, value) => {
+  localStorage.setItem(key, JSON.stringify(value));
 };
 export const GetLocalStorage = (key) => {
   const data = localStorage.getItem(key);

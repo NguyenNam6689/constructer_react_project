@@ -11,3 +11,15 @@ export const deleteToDoAction = (index) => {
     payload: index,
   };
 };
+export const editToDoAction = (data) => {
+  return {
+    type: types.EDIT_TODO,
+    payload: data,
+  };
+};
+export const getToDoAction = (data) => {
+  return {
+    type: types.GET_TODO,
+    payload: data,
+  };
+};

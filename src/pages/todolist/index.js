@@ -1,7 +1,7 @@
-import React, { useReducer, useState } from 'react';
+import React, { useEffect, useReducer, useState } from 'react';
 import toDoReducer, { initState } from 'src/stores/reducer';
 import './style.css';
-import { addToDoAction, deleteToDoAction } from 'src/stores/action';
+import { addToDoAction, deleteToDoAction, getToDoAction } from 'src/stores/action';
 
 const ToDoList = () => {
   const [form, setForm] = useState({
@@ -29,6 +29,9 @@ const ToDoList = () => {
       description: '',
     });
   };
+  useEffect(() => {
+    dispatch(getToDoAction(state));
+  }, []);
   return (
     <div className="todo-wrapper">
       <form onSubmit={handleAddToDo} className="input-wrapper">
@@ -39,6 +42,7 @@ const ToDoList = () => {
           type="text"
           className="title"
           value={form.task}
+          autoFocus={true}
           onChange={handleChange}
           placeholder="Please enter your task"
         />
