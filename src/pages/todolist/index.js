@@ -60,14 +60,16 @@ const ToDoList = () => {
       </form>
       {state?.toDo.map((item) => {
         return (
-          <>
+          <div className="todo-item">
             <ul key={item.id}>
               <li>{item.task}</li>
               <li>{item.description}</li>
             </ul>
-            <button>Edit</button>
-            <button onClick={() => handleDelete(item.id)}>Delete</button>
-          </>
+            <button className="btn-edit">Edit</button>
+            <button onClick={() => handleDelete(item.id)} className="btn-remove">
+              Delete
+            </button>
+          </div>
         );
       })}
     </div>
