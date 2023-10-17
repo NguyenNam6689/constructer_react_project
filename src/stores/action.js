@@ -11,10 +11,10 @@ export const deleteToDoAction = (index) => {
     payload: index,
   };
 };
-export const editToDoAction = (data) => {
+export const editToDoAction = (index, data) => {
   return {
     type: types.EDIT_TODO,
-    payload: data,
+    payload: { index, data },
   };
 };
 export const getToDoAction = (data) => {

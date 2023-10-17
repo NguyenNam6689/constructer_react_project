@@ -33,6 +33,22 @@ const toDoReducer = (state, action) => {
         ...state,
         toDo: Items,
       };
+    case types.EDIT_TODO:
+      const editToDo = state.toDo.map((todo) => {
+        if (todo.id === action.payload.index) {
+          return {
+            ...todo,
+            task: action.payload.data.task,
+            description: action.payload.data.description,
+          };
+        }
+        return todo;
+      });
+      localStorage.setItem('toDo', JSON.stringify(editToDo));
+      return {
+        ...state,
+        toDo: editToDo,
+      };
     default:
       return state;
   }
