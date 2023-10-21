@@ -9,7 +9,7 @@ const AutoCount = () => {
     prevCount.current = count;
     console.info(prevCount.current);
   }, [count]);
-  //
+  //Dùng để xác định toạ độ của thẻ h1
   useEffect(() => {
     const data = elementRef.current.getBoundingClientRect();
     console.info(data);
