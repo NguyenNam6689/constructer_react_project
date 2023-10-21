@@ -2,14 +2,16 @@
 import React from 'react';
 
 //* HOOK
-import AutoCount from './learn_1';
-import Increase from './learn_2';
+import LearnOne from './learn_1';
+import LearnTwo from './learn_2';
+import LearnThree from './learn_3';
 
 const UseRef = () => {
   return (
     <>
-      <Increase />
-      {/* <AutoCount /> */}
+      {/* <LearnOne /> */}
+      {/* <LearnTwo /> */}
+      <LearnThree />
     </>
   );
 };
