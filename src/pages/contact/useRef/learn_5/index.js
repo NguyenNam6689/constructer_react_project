@@ -12,6 +12,7 @@ const ExampleComponent = () => {
   const handleShowValue = () => {
     alert(`Giá trị nhập vào là ${inputRef.current.value}`);
   };
+  console.info(inputRef);
   return (
     <>
       {/* Sử dụng useRef để tham chiếu đến input */}
