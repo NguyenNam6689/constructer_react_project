@@ -1,10 +1,10 @@
-// React
+//* React
 import React, { useState } from 'react';
 
-// Component
+//* Component
 import ProductList from '../ProductList';
 
-// Data
+//* Data
 import { productDummy } from 'src/data/ProductDummy';
 const Learn_1 = () => {
   const [products] = useState(productDummy);
