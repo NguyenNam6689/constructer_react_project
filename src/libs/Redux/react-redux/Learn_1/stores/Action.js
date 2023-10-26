@@ -16,6 +16,7 @@ export const ADD_TODO = (todo) => async (dispatch) => {
     });
   }
 };
+
 export const REMOVE_TODO = (todo) => async (dispatch) => {
   dispatch({ type: types.REMOVE_TODO_PENDING });
   try {
