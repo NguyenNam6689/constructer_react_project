@@ -5,10 +5,10 @@ export const addTodoPending = () => {
     type: types.ADD_TODO_PENDING,
   };
 };
-export const addTodoSuccess = (data) => {
+export const addTodoSuccess = () => {
   return {
     type: types.ADD_TODO_SUCCESS,
-    payload: data,
+    payload: 'success',
   };
 };
 export const addTodoError = (error) => {

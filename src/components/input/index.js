@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const InputActive = () => {
+// CSS
+import 'src/styles/input.css';
+
+const InputTodo = () => {
+  const [task, setTask] = useState('');
   return (
     <>
-      <input></input>
+      <form class="TodoInput">
+        <input type="text" onChange={(e) => setTask(e.target.value)} />
+      </form>
     </>
   );
 };
 
-export default InputActive;
+export default InputTodo;

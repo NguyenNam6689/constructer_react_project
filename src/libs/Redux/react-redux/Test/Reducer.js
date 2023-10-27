@@ -30,11 +30,11 @@ const toDoReducer = (state = initState, action) => {
   const { type } = action;
   switch (type) {
     case types.ADD_TODO_PENDING:
-      return;
+      return state;
     case types.ADD_TODO_SUCCESS:
-      return;
+      return state;
     case types.ADD_TODO_ERROR:
-      return;
+      return state;
     default:
       return state;
   }
