@@ -5,7 +5,6 @@ import {
   addTodoPending,
   addTodoSuccess,
 } from 'src/libs/Redux/react-redux/todos/Action';
-
 // CSS
 import 'src/styles/input.css';
 
@@ -26,7 +25,6 @@ const InputTodo = () => {
       dispatch(addTodoError(error));
     }
   };
-
   return (
     <>
       <form className="TodoInput" onSubmit={handleAddTodo}>
