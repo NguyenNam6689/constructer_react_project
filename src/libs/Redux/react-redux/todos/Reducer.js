@@ -1,9 +1,11 @@
 import React from 'react';
 import * as types from './ActionType';
+import { data } from 'src/data/ProductDummy';
+
 const initState = {
   loading: false,
-  todos: [],
-  complete: false,
+  todos: data,
+  error: false,
 };
 const ToDoReducer = (state = initState, action) => {
   const { type, payload } = action;
