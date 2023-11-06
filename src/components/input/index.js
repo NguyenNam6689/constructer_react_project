@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import {
   addTodoError,
+  addTodoMiddlerware,
   addTodoPending,
   addTodoSuccess,
 } from 'src/libs/Redux/react-redux/todos/Action';
@@ -15,15 +16,16 @@ const InputTodo = () => {
   const handleAddTodo = (e) => {
     e.preventDefault();
     if (task === '') return alert('Please write your task 🙃');
-    try {
-      dispatch(addTodoPending());
-      setTimeout(() => {
-        dispatch(addTodoSuccess(task));
-        alert('Add task successfully ');
-      }, 2000);
-    } catch (error) {
-      dispatch(addTodoError(error));
-    }
+    // try {
+    //   dispatch(addTodoPending());
+    //   setTimeout(() => {
+    //     dispatch(addTodoSuccess(task));
+    //     alert('Add task successfully ');
+    //   }, 2000);
+    // } catch (error) {
+    //   dispatch(addTodoError(error));
+    // }
+    dispatch(addTodoMiddlerware(task));
   };
   return (
     <>

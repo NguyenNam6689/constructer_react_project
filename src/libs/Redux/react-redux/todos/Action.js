@@ -59,3 +59,12 @@ export const editTodoError = (error) => {
     payload: error,
   };
 };
+
+export const addTodoMiddlerware = (todo) => async (dispatch) => {
+  try {
+    dispatch(addTodoPending());
+    dispatch(addTodoSuccess(todo));
+  } catch (error) {
+    dispatch(addTodoError(error));
+  }
+};
