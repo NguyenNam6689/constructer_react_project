@@ -4,7 +4,7 @@ import useCount from 'src/hooks/useCount';
 const About = () => {
   return (
     <>
-      <h1>About</h1>
+      <h1>Hello</h1>
     </>
   );
 };
